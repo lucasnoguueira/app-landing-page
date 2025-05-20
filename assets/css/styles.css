@@ -107,9 +107,11 @@ header {
       background-color: var(--color-white);
       border-radius: 5px;
       height: 60px;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
       align-items: center;
       padding-left: var(--spacing-52);
+      align-content: center;
 
       @media (max-width: 768px) {
         padding-left: var(--spacing-9);
@@ -172,6 +174,7 @@ header {
         display: flex;
         align-self: center;
         padding-right: var(--spacing-5);
+        justify-self: end;
 
         & ul {
           list-style: none;
